@@ -1,0 +1,14 @@
+{
+  "presets": [
+    ["env", {
+      "targets": {
+        "node": "9"
+      }
+    }]
+  ],
+  "plugins": [
+    "transform-flow-strip-types",
+    "transform-es2015-modules-commonjs",
+    ["transform-object-rest-spread", { "useBuiltIns": true }]
+  ]
+}

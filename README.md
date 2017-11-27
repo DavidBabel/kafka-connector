@@ -62,16 +62,26 @@ describe('Test', () => {
 });
 ```
 
-# Work on it
+## Usage with module-health
 
-## Quickstart
+```javascript
+import healthController, {addHealthCheck} from 'module-healthcheck';
+import {getStatus as getKafkaStatus} from 'module-kafka';
+
+addHealthCheck(getKafkaStatus);
+app.use('/health', healthController);
+```
+
+## Work on it
+
+### Quickstart
 
 ```
 yarn install
 yarn build
 ```
 
-## Tests
+### Tests
 
 ```
 yarn test

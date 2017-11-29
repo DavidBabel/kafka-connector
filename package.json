@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "kafka-node": "^2.3.0",
-    "logger-helper": "DavidBabel/logger-helper#1.1.0"
+    "logger-helper": "DavidBabel/logger-helper#2.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

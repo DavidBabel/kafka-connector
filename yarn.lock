@@ -1499,9 +1499,9 @@ mocha@^4.0.1:
     mkdirp "0.5.1"
     supports-color "4.4.0"
 
-module-logger@DavidBabel/module-logger#1.1.0:
+logger-helper@DavidBabel/logger-helper#1.1.0:
   version "1.1.0"
-  resolved "https://codeload.github.com/DavidBabel/module-logger/tar.gz/591669f28fe689310a64a17efdd4d9e3178d432a"
+  resolved "https://codeload.github.com/DavidBabel/logger-helper/tar.gz/591669f28fe689310a64a17efdd4d9e3178d432a"
   dependencies:
     colors "^1.1.2"
     winston "^2.4.0"

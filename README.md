@@ -1,4 +1,4 @@
-# Module Kafka
+# Kafka Connector
 
 This module is used to send messages to Kafka
 
@@ -7,7 +7,7 @@ This module is used to send messages to Kafka
 To install it in your project, think to fix the version using this kind of command :
 
 ```
-yarn add Ogury/module-kafka#v1.X.X
+yarn add Ogury/kafka-connector#v1.X.X
 ```
 
 ## Requirements
@@ -30,7 +30,7 @@ KAFKA_TOPIC_<name2>
 To use the kafka connector here is the API :
 
 ```javascript
-import {client, producer, sendMessage, getStatus} from 'module-kafka';
+import {client, producer, sendMessage, getStatus} from 'kafka-connector';
 
 // send message into a specific topic
 sendMessage(message: Object, topic: string)
@@ -46,7 +46,7 @@ producer :HighLevelProducerFinal
 To use the helpers in your tests :
 
 ```javascript
-import {initKafkaSpy, expectedCreatedStatsCountIs, getCreatedStat} from 'module-kafka/helpers';
+import {initKafkaSpy, expectedCreatedStatsCountIs, getCreatedStat} from 'kafka-connector/helpers';
 
 describe('Test', () => {
   beforeEach(async function () {
@@ -62,11 +62,11 @@ describe('Test', () => {
 });
 ```
 
-## Usage with module-health
+## Usage with health controller
 
 ```javascript
-import healthController, {addHealthCheck} from 'module-healthcheck';
-import {getStatus as getKafkaStatus} from 'module-kafka';
+import healthController, {addHealthCheck} from 'health-controller';
+import {getStatus as getKafkaStatus} from 'kafka-connector';
 
 addHealthCheck(getKafkaStatus);
 app.use('/health', healthController);

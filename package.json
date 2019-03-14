@@ -1,6 +1,6 @@
 {
   "name": "kafka-connector",
-  "version": "3.0.1",
+  "version": "3.1.0",
   "main": "dist/index.js",
   "repository": "git@github.com:DavidBabel/kafka-connector.git",
   "author": "David Babel <david.babel@ogury.co>",
@@ -11,8 +11,7 @@
     "test": "NODE_ENV=test mocha --require babel-core/register tests/**/*.js"
   },
   "dependencies": {
-    "kafka-node": "^2.3.0",
-    "logger-helper": "DavidBabel/logger-helper#^3.0.0"
+    "kafka-node": "^2.3.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
